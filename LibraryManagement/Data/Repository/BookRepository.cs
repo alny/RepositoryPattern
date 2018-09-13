@@ -27,7 +27,7 @@ namespace LibraryManagement.Data.Repository {
 
         public IEnumerable<Book> GetAllWithAuthor() {
             return _context.Books
-                    .Include(a => a.Author)
+                    .Include(a => a.Author);
         }
     }
 }
